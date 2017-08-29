@@ -2,7 +2,7 @@ import numpy as np
 from scipy import stats
 
 
-TIMESTAMP_FILE_LOCATION = 'tiempos.txt'
+TIMESTAMP_FILE_LOCATION = 'tiempos_limpiados.txt'
 
 
 class AthleteTester(object):
@@ -14,5 +14,6 @@ class AthleteTester(object):
 
     def make_related_samples_t_test_on(self, sample_1, sample_2):
         return stats.ttest_rel(sample_1, sample_2)
+
 
 
